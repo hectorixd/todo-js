@@ -1,6 +1,6 @@
-# Webpack starter kit
+# Proyecto ToDo app
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
+Para este proyecto se utilizó el _template_ creado por [Sindre Sorhus](http://sindresorhus.com)
 
 ## Notas:
 
