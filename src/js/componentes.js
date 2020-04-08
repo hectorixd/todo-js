@@ -6,7 +6,7 @@ const divTodoList = document.querySelector('.todo-list');
 const txtInput = document.querySelector('.new-todo');
 const btnBorrar = document.querySelector('.clear-completed');
 const ulFiltros = document.querySelector('.filters');
-const anchorFiltros = document.querySelectorAll('filtro');
+const anchorFiltros = document.querySelectorAll('.filtro');
 
 export const crearTodoHtml = (todo) => {
   const htmlTodo = `
@@ -14,11 +14,11 @@ export const crearTodoHtml = (todo) => {
     <div class="view">
       <input class="toggle" type="checkbox" ${
         todo.completado ? 'checked' : ''
-      } />
+      } >
       <label>${todo.tarea}</label>
       <button class="destroy"></button>
     </div>
-    <input class="edit" value="Create a TodoMVC template" />
+    <input class="edit" value="Create a TodoMVC template" >
   </li>`;
 
   const div = document.createElement('div');
@@ -84,6 +84,7 @@ ulFiltros.addEventListener('click', (event) => {
         if (!completado) {
           elemento.classList.add('hidden');
         }
+        break;
     }
   }
 });
